@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* ul {
+  list-style: none;
+}
+
+body {
+  max-width: 21cm;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
+
+.btn {
+  background-color: #009245 !important;
+  color: #fff !important;
+  transition: all 300ms;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #333;
+  margin: 0 0.5rem;
+}
+.header .logo {
+  width: 5rem;
+}
+.header .logo img {
+  width: 100%;
+}
+.header .header-info {
+  display: flex;
+  flex-direction: column;
+}
+.header .header-info .org-title {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.header .header-info .contact-address {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.header .header-info .doc-title {
+  text-align: center;
+}
+.header .mail {
+  border: 1px solid #333;
+  width: 20%;
+  padding: 2rem 1rem;
+  align-self: flex-start;
+}
+
+hr {
+  height: 0.2rem;
+  margin-top: 2rem;
+  background-color: #333;
+}
+hr.first {
+  margin-top: 1rem;
+}
+
+.home {
+  margin: 5rem auto;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.date {
+  margin: 0.5rem;
+  display: flex;
+  float: right;
+  border: 1px solid #333;
+  width: 50%;
+  padding: 1rem;
+}
+.date p {
+  font-weight: bold;
+}
+
+.clr {
+  clear: both;
+}
+
+.order-body {
+  margin: 0.5rem;
+  border: 2px solid #333;
+  padding: 1rem;
+}
+.order-body .items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1rem;
+}
+.order-body .items .item {
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.order-body .items .item h3 {
+  font-size: 1.2rem;
+}
+.order-body .delivery {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  margin: 0 0.5rem;
+}
+.table td {
+  padding: 1rem;
+}
+
+@media print {
+  .printBtn {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,140 @@
+//resets
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+//colors
+$primary : #009245;
+$secondary: #333;
+
+//general style
+body{
+    max-width: 21cm;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    border: 2px solid $secondary;
+}
+.btn{
+    background-color: $primary !important;
+    color: #fff !important;
+    transition: all 300ms;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid $secondary;
+    margin: 0 .5rem;
+    .logo{
+        width: 5rem;
+        img{
+            width: 100%;
+        }
+    }
+    .header-info{
+        display: flex;
+        flex-direction: column;
+        .org-title{
+            text-align: center;
+            font-size: .8rem;
+        }
+        .contact-address{
+            display: flex;
+            justify-content: space-between;
+            font-size: .8rem;
+        }
+        .doc-title{
+            text-align: center;
+        }
+    }
+    .mail{
+        border: 1px solid $secondary;
+        width: 20%;
+        padding: 2rem 1rem;
+        align-self: flex-start;
+    }
+}
+hr{
+    height: .2rem;
+    margin-top: 2rem;
+    background-color: $secondary;
+    &.first{
+        margin-top: 1rem;
+    }
+}
+
+//home page
+.home{
+    margin: 5rem auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+//purchase order page
+.date{
+    margin: .5rem;
+    // float: right;
+    display: flex;
+    float: right;
+    border: 1px solid $secondary;
+    width: 50%;
+    padding: 1rem;
+    p{
+        font-weight: bold;
+    }
+}
+.clr{
+    clear: both;
+}
+.order-body{
+    margin: .5rem;
+    border: 2px solid $secondary;
+    padding: 1rem;
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 1rem;
+        .item{
+            width: 100%;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            h3{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .delivery{
+        margin: 1rem 0;
+        width: 100%;
+
+    }
+}
+.table{
+    width: 100%;
+    margin: 0 .5rem;
+    td{
+        padding: 1rem;
+    }
+}
+
+
+@media print{
+    .printBtn{
+        display: none;
+    }
+}
