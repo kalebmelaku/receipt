@@ -18,9 +18,9 @@ $secondary: #333;
 
 //general style
 body{
-    max-width: 21cm;
-    width: 21cm;
-    height: 29.7cm;
+    // max-width: 21cm;
+    width: 24cm;
+    // height: 29.7cm;
     margin: 0 auto;
     border: 2px solid $secondary;
 }
@@ -121,18 +121,54 @@ hr{
     .delivery{
         margin: 1rem 0;
         width: 100%;
-
+        
     }
 }
 .table{
     width: 100%;
-    margin: 0 .5rem;
+    padding: 0 .5rem;
     td{
+        border: 1px solid $secondary;
         padding: 1rem;
     }
 }
+.total_table{
+    // float: right;
+    td.total{
+        // display: inline-block;
+        border: 1px solid $secondary;
+        padding: .4rem 0;
+        // padding:0 8rem;
+    }
+    td.total_title{
+        border: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    td{
+        visibility: none;
+        padding: 0;
+        border: none;
+    }
+}
 
-
+.signature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+.footer{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
 @media print{
     .printBtn{
         display: none;
