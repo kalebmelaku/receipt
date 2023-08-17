@@ -152,6 +152,51 @@ hr{
     }
 }
 
+.request_table{
+    margin: 1rem 0;
+    font-size: .8rem;
+    thead tr td{
+        padding: .5rem !important;
+    }
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    div{
+        display: flex;
+        width: 100%;
+        hr{
+            // height: 10px;
+            width: 50%;
+        }
+    }
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .grid{
+        border: 1px solid $secondary;
+        padding: 2rem 1rem;
+    }
+    .last-grid{
+        padding: 0;
+        div{
+            padding: 2rem 1rem;
+            border: 1px solid $secondary;
+        }
+    }
+}
+.request-footer{
+    margin: 0 .5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    hr{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
 .signature{
     display: flex;
     align-items: center;

@@ -143,6 +143,54 @@ hr.first {
   border: none;
 }
 
+.request_table {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+.request_table thead tr td {
+  padding: 0.5rem !important;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.info div {
+  display: flex;
+  width: 100%;
+}
+.info div hr {
+  width: 50%;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grids .grid {
+  border: 1px solid #333;
+  padding: 2rem 1rem;
+}
+.grids .last-grid {
+  padding: 0;
+}
+.grids .last-grid div {
+  padding: 2rem 1rem;
+  border: 1px solid #333;
+}
+
+.request-footer {
+  margin: 0 0.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.request-footer hr {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 .signature {
   display: flex;
   align-items: center;
